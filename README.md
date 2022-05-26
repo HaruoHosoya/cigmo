@@ -20,11 +20,11 @@ This is the official pytorch implementation of CIGMO (Categorical Invariant Gene
 
 To train one CIGMO instance with 3 categories (clusters) on ShapeNet with 3 object classes, type:
 
-python -m run_shapenet --dataset_path=<path> --model_path=<path> --num_class=3 --num_cluster=3 --group_size=3 --gpu=0 --start_instance=0 --num_instance=1 --mode=train 
+python -m run_shapenet --dataset_path=[[path]] --model_path=[[path]] --num_class=3 --num_cluster=3 --group_size=3 --gpu=0 --start_instance=0 --num_instance=1 --mode=train 
 
 To evaluate the trained CIGMO model, type:
 
-python -m run_shapenet --dataset_path=<path> --model_path=<path> --num_class=3 --num_cluster=3 --group_size=3 --gpu=0 --start_instance=0 --num_instance=1 --mode=test --save_result=True
+python -m run_shapenet --dataset_path=[[path]] --model_path=[[path]] --num_class=3 --num_cluster=3 --group_size=3 --gpu=0 --start_instance=0 --num_instance=1 --mode=test --save_result=True
 
 For comparison, other types of models can be trained with changing options:
 - GVAE: set --num_cluster=1
@@ -33,7 +33,7 @@ For comparison, other types of models can be trained with changing options:
 
 To train one IIC instance with 3 categories (clusters) on ShapeNet with 3 object classes, type:
 
-python -m run_iic_shapenet --dataset_path=<path> --model_path=<path> --num_class=3 --num_cluster=3 --group_size=3 --gpu=0 --start_instance=0 --num_instance=1 --mode=train 
+python -m run_iic_shapenet --dataset_path=[[path]] --model_path=[[path]] --num_class=3 --num_cluster=3 --group_size=3 --gpu=0 --start_instance=0 --num_instance=1 --mode=train 
 
 One can play with visualization etc. by running commands in nb_example_mvc.py or nb_example_shapenet.py, which are scripts for interactive use, e.g., Spyder.
 
