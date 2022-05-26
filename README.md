@@ -13,8 +13,8 @@ This is the official pytorch implementation of CIGMO (Categorical Invariant Gene
 - scipy
 
 # Datasets
-- ShapeNet [https://mega.nz/folder/FblQzB6J#_d4wyGwRv27xwqsBMLv-gA]
-- MVC Cloth [https://mega.nz/folder/dT9DzTJY#LJmJIgUUaBJW3b1Tg-oIuw]
+- [ShapeNet](https://mega.nz/folder/FblQzB6J#_d4wyGwRv27xwqsBMLv-gA)
+- [MVC Cloth](https://mega.nz/folder/dT9DzTJY#LJmJIgUUaBJW3b1Tg-oIuw)
 
 # Usage
 
