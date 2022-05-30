@@ -13,8 +13,10 @@ This is the official pytorch implementation of CIGMO (Categorical Invariant Gene
 - scipy
 
 # Datasets
-- [ShapeNet (processed pt file)](https://mega.nz/folder/FblQzB6J#_d4wyGwRv27xwqsBMLv-gA)
-- [MVC Cloth (processed pt file)](https://mega.nz/folder/dT9DzTJY#LJmJIgUUaBJW3b1Tg-oIuw)
+
+We provide processed dataset files in pt format:
+- [ShapeNet](https://mega.nz/folder/FblQzB6J#_d4wyGwRv27xwqsBMLv-gA)
+- [MVC Cloth](https://mega.nz/folder/dT9DzTJY#LJmJIgUUaBJW3b1Tg-oIuw)
 
 # Usage
 
@@ -27,7 +29,7 @@ To evaluate the trained CIGMO model, type:
 python -m run_shapenet --dataset_path=[[path]] --model_path=[[path]] --num_class=3 --num_cluster=3 --group_size=3 --gpu=0 --start_instance=0 --num_instance=1 --mode=test --save_result=True
 
 For comparison, other types of models can be trained with changing options:
-- GVAE: set --num_cluster=1
+- GVAE [2]: set --num_cluster=1
 - Mixture of VAEs: set group_size=1
 - MLVAE: add --mlvae=True
 
@@ -38,7 +40,9 @@ python -m run_iic_shapenet --dataset_path=[[path]] --model_path=[[path]] --num_c
 One can play with visualization etc. by running commands in nb_example_mvc.py or nb_example_shapenet.py, which are scripts for interactive use, e.g., Spyder.
 
 # References and contact
-If you publish a paper based on this code, please cite [1] or any following conference/journal publication.  If you have difficulty of downloading datasets, etc., please contact with the author.
+If you publish a paper based on this code/data, please cite [1] or any following conference/journal publication.  If you have difficulty of downloading datasets, etc., please contact with the author.
 
-[1] Haruo Hosoya.  CIGMO: Categorical invariant representations in a deep generative framework.  UAI 2022.
+[1] Haruo Hosoya.  CIGMO: Categorical invariant representations in a deep generative framework.  UAI 2022.  [arXiv](https://arxiv.org/abs/2205.13758)
+
+[2] Haruo Hosoya.  Group-based Learning of Disentangled Representations with Generalizability for Novel Contents.  IJCAI 2019.  [arXiv](https://arxiv.org/abs/1809.02383)
 
